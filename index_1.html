@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Study Menu</title>
+<style>
+  *{ box-sizing: border-box; }
+
+  body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(160deg, #0b1220, #101a2e);
+    font-family: 'Segoe UI', Tahoma, system-ui, sans-serif;
+    color: #f0f4ff;
+    padding: 24px;
+  }
+
+  .card{
+    width: 100%;
+    max-width: 420px;
+    background: #131c30;
+    border: 1px solid #24314d;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  }
+
+  h1{ margin: 0 0 6px; font-size: 26px; }
+
+  p.sub{
+    margin: 0 0 28px;
+    color: #8fa0c4;
+    font-size: 14px;
+  }
+
+  .menu{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  a.item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #f0f4ff;
+    background: #1a2540;
+    border: 1px solid #2b3a5e;
+    border-radius: 10px;
+    padding: 18px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+  }
+
+  a.item:hover{
+    transform: translateX(4px);
+    background: #223258;
+    border-color: #4d7cff;
+  }
+
+  a.item .arrow{ color: #4d7cff; font-weight: 400; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>Study Menu</h1>
+    <p class="sub">اختار الصفحة اللي عايز تفتحها</p>
+    <div class="menu">
+      <a class="item" href="Study%20hours%20tracker.html">
+        ⏱ Study Hours Tracker
+        <span class="arrow">→</span>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
